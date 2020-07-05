@@ -33,9 +33,9 @@ public class Client {
 
                 System.out.println("Server: " + inMsg);
 
-                Thread ServerOut = new Thread(() -> outMsg(outText));
+                Thread ClientOut = new Thread(() -> outMsg(outText));
 
-                ServerOut.start();
+                ClientOut.start();
 
 
             }

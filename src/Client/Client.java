@@ -1,11 +1,9 @@
 package Client;
 
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
-import java.util.logging.ConsoleHandler;
 
 public class Client {
 
@@ -51,7 +49,7 @@ public class Client {
         }
 
     }
-
+//метод для одправки сообщений
     public static void outMsg(PrintWriter text) {
         Scanner scanner = new Scanner(System.in);
         String msg = scanner.nextLine();
